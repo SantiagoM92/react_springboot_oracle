@@ -1,8 +1,12 @@
 target/
 
+
+
 pom.properties
 
 *.iml
+
+*.eslintcache
 
 # Compiled class file
 *.class
