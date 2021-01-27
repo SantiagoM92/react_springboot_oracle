@@ -15,8 +15,8 @@ public class PetServiceImpl implements PetService, ApplicationContextAware {
     PetDAO petDAO;
 
     @Override
-    public void savePet(Pet pet) {
-        petDAO.save(pet);
+    public Pet savePet(Pet pet) {
+        return petDAO.save(pet);
     }
 
     @Override

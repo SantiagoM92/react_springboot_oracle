@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PetService {
 
-    void savePet(Pet pet);
+    Pet savePet(Pet pet);
 
     void deletePet(Integer number);
 

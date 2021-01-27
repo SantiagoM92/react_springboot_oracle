@@ -15,8 +15,8 @@ public class PetShopController {
     PetService petService;
 
     @PostMapping("/pet")
-    void savePet(@RequestBody Pet pet) {
-        petService.savePet(pet);
+    Pet savePet(@RequestBody Pet pet) {
+        return petService.savePet(pet);
     }
 
     @GetMapping("/pet/{id}")
