@@ -100,7 +100,7 @@ export default function SimpleTable() {
                     </Table>
                 </TableContainer>
             )}
-            <Link className={classes.link} to="/">
+            <Link className={classes.link} to="/petShop/">
                 <Typography align="left">
                     &#x2190; Head back to save data
                 </Typography>

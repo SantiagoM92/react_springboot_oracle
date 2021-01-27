@@ -49,7 +49,7 @@ export default function AddPet() {
     const [type, setType] = React.useState("");
     const [color, setColor] = React.useState("");
     const [registered, setRegistered] = React.useState(new Date("1991-03-11T03:00:00"));
-    const [message, setMessage] = React.useState("Nothing saved in the session :(");
+    const [message, setMessage] = React.useState("Nothing saved in the session");
 
     const handleNameChange = event => setName(event.target.value);
     const handleTypeChange = event => setType(event.target.value);
@@ -73,7 +73,7 @@ export default function AddPet() {
 
         let body = await response.json();
         console.log(body);
-        setMessage(body.id ? "Pet successfully updated" : "Pet updating failed")
+        setMessage(body.id ? "Pet successfully updated :)" : "Pet updating failed :(")
 
     }
 
@@ -162,7 +162,7 @@ export default function AddPet() {
 
                     <Grid container justify="center">
                         <Grid item>
-                            <Link to="/view">View Pets</Link>
+                            <Link to="/petShop/view">View Pets</Link>
                         </Grid>
                     </Grid>
                 </form>

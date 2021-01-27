@@ -9,8 +9,8 @@ class App extends Component {
         return (
 
             <Router>
-                <Route exact path="/" component={AddPet}/>
-                <Route exact path="/view" component={Table}/>
+                <Route exact path="/petShop/" component={AddPet}/>
+                <Route exact path="/petShop/view" component={Table}/>
             </Router>
 
         );
